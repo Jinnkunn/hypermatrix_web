@@ -1,0 +1,7 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "People"
+    url: /people/
