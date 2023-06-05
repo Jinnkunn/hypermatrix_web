@@ -61,3 +61,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+
+scholar:
+   locale: en
+   source: ./_bibliography/
