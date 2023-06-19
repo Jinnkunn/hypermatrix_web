@@ -1,0 +1,127 @@
+{% for hash in include.authors -%}
+{% assign author = hash[1] -%}
+
+{% if author.alumni %}
+{% assign alumni = true %}
+{% else %}
+{% assign alumni = false %}
+{% endif %}
+
+{% if alumni == include.alumni %}
+{% if author.role == include.role %}
+
+<style>
+    .profile_link {
+        color: rgb(255, 212, 0);
+        text-decoration: none;
+    }
+  
+    .profile_link:hover {
+        color: rgb(255, 212, 0);
+    } 
+    
+    .profile_link:visited {
+        color: rgb(255, 212, 0);
+    } 
+
+    .author-card{
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    .author-avatar {
+        width: 30%; 
+        min-width: 300px;
+    }
+
+    .author-avatar > img {
+        height: 200px; 
+        width: 200px; 
+        object-fit: contain;
+    }
+
+    .author-info {
+        width: 70%; 
+        max-width: 500px;
+    }
+</style>
+
+<article class="author-card">
+    <div class="author-avatar">
+        {% if author.avatar %}
+        <img src="{{ author.avatar | relative_url }}" alt="">
+        {% else %}
+        <img src="{{ site.author.avatar | relative_url }}" alt="">
+        {% endif %}
+    </div>
+
+    <div class="author-info">
+        <b class="author-name">
+            {% if author.links %}
+            <a class="profile_link" href="{{ author.links[0].url }}">{{ author.name }}</a>
+            {% else %}
+            {{ author.name }}
+            {% endif %}
+        </b>
+
+        {% if author.advisor %}
+        <div class="author-advisor">
+            <b>
+                {% if author.role == "Postdoc" %}
+                Working with:
+                {% elsif author.role == "Intern" %}
+                Hosted by:
+                {% else %}
+                Advised by:
+                {% endif %}
+            </b>
+            {{ author.advisor }}
+            {% if author.date %}
+            <span>
+                ({{ author.date }})
+            </span>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        
+        {% if author.bio %}
+        <div class="author-bio">
+            {{ author.bio }}
+        </div>
+        {% endif %}
+        
+        {% if author.note %}
+        <div class="author-note">
+            {{ author.note }}
+        </div>
+        {% endif %}
+        
+        {% if author.new_role %}
+        <div class="author-note">
+            <b>➡️ </b> {{ author.new_role }}
+        </div>
+        {% endif %}
+
+        {% if author.links %}
+        <div class="author-links">
+            {% for link in author.links %}
+
+            {% include infer-icon.html link=link %}
+
+            {% if icon %}
+            <a href="{{ link.url }}" class="{{ icon }} profile_link"></a>
+            {% endif %}
+
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </div>
+
+</article>
+
+{%endif %}
+{% endif %}
+
+{% endfor %}

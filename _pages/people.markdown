@@ -2,20 +2,62 @@
 title: People
 layout: collection
 permalink: /people/
-collection: people
+# collection: people
 entries_layout: grid
 classes: wide
 ---
 
-<h3><a href="#current"></a>Current Members</h3>
-<table style="border:0px;">
-<colgroup>
-       <col span="1" style="width: 40%;">
-       <col span="1" style="width: 60%;">
-    </colgroup>
-{% for member in site.data.members %}
-  <tr style="border:0px;"> <td style="border:0px;"> <a href="{{ member.url }}"><img style="display:block; width:100px;height: 100px; margin: 0 auto; border-radius: 50%; object-fit: cover" src="{{ member.image | prepend: "/assets/images/members/" }}"></a></td><td style="border:0px;">
-          <a href="{{ member.url }}">{{ member.name }}</a>, {{member.role}}</td>
-  </tr>
-{% endfor %}
-</table>
+### Faculty
+
+<!-- {% include card-authors-with-role.html authors=site.data.authors role="Faculty" alumni=false %} -->
+
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty" alumni=false %}
+
+<!-- ### Adjunct Faculty
+
+{% include card-authors-with-role.html authors=site.data.authors role="Adjunct Faculty" alumni=false %} -->
+
+<!-- ### Postdocs
+
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=false %} -->
+
+### PhD Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="PhD" alumni=false %}
+
+### Masters Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="Master" alumni=false %}
+
+### Undergraduate Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="Undergraduate" alumni=false %}
+
+### Interns
+
+{% include card-authors-with-role.html authors=site.data.authors role="Intern" alumni=false %}
+
+<!-- ---
+
+# Alumni
+
+
+### Postdocs
+
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
+
+### PhD Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="PhD" alumni=true %}
+
+### Masters Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="Master" alumni=true %}
+
+### Undergraduate Students
+
+{% include card-authors-with-role.html authors=site.data.authors role="Undergraduate" alumni=true %}
+
+### Interns
+
+{% include card-authors-with-role.html authors=site.data.authors role="Intern" alumni=true %} -->

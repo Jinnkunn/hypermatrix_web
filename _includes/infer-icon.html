@@ -1,0 +1,17 @@
+{% assign link = include.link %}
+
+{% if link.icon %}
+{% assign icon = link.icon %}
+{% elsif link.label == "GitHub" %}
+{% assign icon = 'fab fa-github' %}
+{% elsif link.label == "Twitter" %}
+{% assign icon = 'fab fa-twitter' %}
+{% elsif link.label == "LinkedIn" %}
+{% assign icon = 'fab fa-linkedin' %}
+{% elsif link.label == "Website" %}
+{% assign icon = 'fas fa-link' %}
+{% elsif link.label == "Scholar" %}
+{% assign icon = 'fas fa-graduation-cap' %}
+{% else %}
+{% assign icon = false %}
+{% endif %}

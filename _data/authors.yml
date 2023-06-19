@@ -1,0 +1,54 @@
+# # To get started: Copy this template profile below and start editing.
+# John Doe:
+#   name: "John Doe"
+#   role: "PhD"
+#   avatar: "/assets/images/bio/placeholder/martlet.jpeg"
+#   date: "Sep 2030"
+#   advisor: "John Doe Sr."
+#   bio: "Just some cool student"
+#   note: "Co-advised by Amasa L."
+#   alumni: true
+#   new_role: "Professing at Leland Junior S. University"
+#   links:
+#     - label: "Website"
+#       url: "https://john-doe.github.io/"
+#     - label: "GitHub"
+#       url: "https://github.com/john-doe"
+#     - label: "Twitter"
+#       url: "https://twitter.com/john-doe"
+#     - label: "Scholar"
+#       icon: "fas fa-fw fa-graduation-cap"
+#       url: "https://scholar.google.com/citations?user=<user_id>"
+
+Hassan Sajjad:
+  name: Hassan Sajjad
+  role: Faculty
+  # semantic_scholar_id: '1666183192'
+  avatar: /assets/images/members/hassan.png
+  date: Winter 2021
+  bio: asdasd
+  alumni: false
+  links:
+  - label: Twitter
+    url: https://twitter.com/_jinnkunn
+  - label: GitHub
+    url: https://github.com/jinnkunn
+  - label: Website
+    url: https://jinnkunn.com
+
+Jinkun Chen:
+  name: Jinkun Chen
+  role: PhD
+  # semantic_scholar_id: '1666183192'
+  avatar: /assets/images/members/jinkun.jpeg
+  advisor: Hassan Sajjad, Evangelos Milios
+  date: Winter 2021
+  bio: asdasd
+  alumni: false
+  links:
+  - label: Twitter
+    url: https://twitter.com/_jinnkunn
+  - label: GitHub
+    url: https://github.com/jinnkunn
+  - label: Website
+    url: https://jinnkunn.com
