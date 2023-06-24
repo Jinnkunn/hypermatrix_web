@@ -8,5 +8,19 @@ header:
     overlay_image: /assets/images/head.jpg
 ---
 
-We are **HyperMatrix Lab** from **Dalhousie University**. <br> <br>
+<link rel="stylesheet" href="./assets/style.css">
+
+We are **HyperMatrix Lab** from **[Dalhousie University](https://dal.ca)**. <br> <br>
 We are passionate about **Natural Language Processing**, **Deep Learning**, and designing and coding **Trustworthy AI**.
+
+
+## News 
+
+<ul>
+    {% for post in site.posts %}
+        <li class="home_news_item">
+        <a href="{{ post.url }}" class="home_news_title">{{ post.title }}</a>
+        {{ post.excerpt }}
+        </li>
+    {% endfor %}
+</ul>

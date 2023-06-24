@@ -10,41 +10,7 @@
 {% if alumni == include.alumni %}
 {% if author.role == include.role %}
 
-<style>
-    .profile_link {
-        color: rgb(255, 212, 0);
-        text-decoration: none;
-    }
-  
-    .profile_link:hover {
-        color: rgb(255, 212, 0);
-    } 
-    
-    .profile_link:visited {
-        color: rgb(255, 212, 0);
-    } 
-
-    .author-card{
-        display: flex; 
-        flex-wrap: wrap;
-    }
-
-    .author-avatar {
-        width: 30%; 
-        min-width: 300px;
-    }
-
-    .author-avatar > img {
-        height: 200px; 
-        width: 200px; 
-        object-fit: contain;
-    }
-
-    .author-info {
-        width: 70%; 
-        max-width: 500px;
-    }
-</style>
+<link rel="stylesheet" href="../assets/style.css">
 
 <article class="author-card">
     <div class="author-avatar">

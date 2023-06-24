@@ -26,29 +26,52 @@ Hassan Sajjad:
   # semantic_scholar_id: '1666183192'
   avatar: /assets/images/members/hassan.png
   date: Winter 2021
-  bio: asdasd
+  bio: Associate Professor, Faculty of Computer Science, Dalhousie University
   alumni: false
   links:
-  - label: Twitter
-    url: https://twitter.com/_jinnkunn
-  - label: GitHub
-    url: https://github.com/jinnkunn
   - label: Website
-    url: https://jinnkunn.com
+    url: https://hsajjad.github.io/
+  - label: Twitter
+    url: https://twitter.com/hassaan84s
+  - label: GitHub
+    url: https://github.com/hsajjad
+  - label: Scholar
+    url: https://scholar.google.de/citations?user=t3BH6NkAAAAJ&hl=en
 
 Jinkun Chen:
   name: Jinkun Chen
   role: PhD
-  # semantic_scholar_id: '1666183192'
   avatar: /assets/images/members/jinkun.jpeg
-  advisor: Hassan Sajjad, Evangelos Milios
+  advisor: Dr. Hassan Sajjad, Dr. Evangelos Milios
   date: Winter 2021
-  bio: asdasd
+  bio: 
   alumni: false
   links:
+  - label: Website
+    url: https://jinkunchen.com
   - label: Twitter
     url: https://twitter.com/_jinnkunn
   - label: GitHub
     url: https://github.com/jinnkunn
+
+Xuemin Yu:
+  name: Xuemin Yu
+  role: PhD
+  avatar: /assets/images/members/xuemin.png
+  advisor: Dr. Hassan Sajjad
+  date: Winter 2021
+  bio: 
+  alumni: false
+  links:
   - label: Website
-    url: https://jinnkunn.com
+    url: https://xueminyu.com
+
+Sher Badshah:
+  name: Sher Badshah
+  role: PhD
+  avatar: /assets/images/members/sher.jpeg
+  advisor: Dr. Hassan Sajjad
+  date: Fall 2021
+  bio: 
+  alumni: false
+  links:

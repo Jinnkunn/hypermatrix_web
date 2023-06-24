@@ -1,0 +1,79 @@
+a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd400;
+}
+
+a:link {
+    text-decoration: none;
+    transition: all .2s ease-in;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none !important;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.site-title,
+.site-title:visited,
+.site-title:hover {
+    border-bottom: none
+}
+
+
+.home_news_item {
+    list-style-type: none;
+}
+
+
+.home_news_title {
+    font-size: 1.25rem;
+}
+
+.author-card{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.author-avatar {
+    width: 30%; 
+    min-width: 300px;
+}
+
+.author-avatar > img {
+    height: 200px; 
+    width: 200px; 
+    object-fit: contain;
+}
+
+.author-info {
+    width: 70%; 
+    max-width: 500px;
+}
+
+.page__footer-copyright > a,
+.page__footer-copyright > a:visited
+.page__footer-copyright > a:hover,
+.social-icons > li > a,
+.social-icons > li > a:visited,
+.social-icons > li > a:hover  {
+    color: white;
+}
+
+
+#bibbase_header > ul > li > a,
+#bibbase_header > ul > li > a:visited,
+#bibbase_header > ul > li > a:hover,
+#bibbase_header > ul > .dropdown > .dropdown-menu > li > a,
+#bibbase_header > ul > .dropdown > .dropdown-menu > li > a:visited,
+#bibbase_header > ul > .dropdown > .dropdown-menu > li > a:hover {
+    color: black;
+    border-bottom: none
+}
